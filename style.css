@@ -1,0 +1,258 @@
+/* Global Styles */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --WHITE: hsl(0, 0%, 100%);
+  --EGGSHELL: hsl(30, 54%, 90%);
+  --LIGHT-GREY: hsl(30, 18%, 87%);
+  --WENGE-BROWN: hsl(30, 10%, 34%);
+  --DARK-CHARCOAL: hsl(24, 5%, 18%);
+  --NUTMEG: hsl(14, 45%, 36%);
+  --DARK-RASPBERRY: hsl(332, 51%, 32%);
+  --ROSE-WHITE: hsl(330, 100%, 98%);
+}
+body {
+  font-family: "Outfit", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--EGGSHELL);
+}
+
+/* Food Card Styles */
+.food_card {
+  margin-top: 3em;
+  background-color: var(--WHITE);
+  max-width: 700px;
+  padding: 2em;
+  border-radius: 20px;
+  margin-bottom: 9em;
+}
+
+img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+h1 {
+  margin-top: 0.5em;
+  font-family: "Young Serif", serif;
+  font-size: 45px;
+  font-weight: 400;
+  color: black;
+}
+
+p {
+  margin-top: 1.3em;
+  font-size: 15px;
+  color: var(--WENGE-BROWN);
+}
+
+/* Second Section */
+.card_second_section {
+  margin-top: 1.5em;
+  height: 180px;
+  background-color: var(--ROSE-WHITE);
+  border-radius: 8px;
+}
+.second_section_topic {
+  padding-left: 1.5em;
+  margin-bottom: 1em;
+  font-size: 18px;
+  color: var(--DARK-RASPBERRY);
+  font-weight: bold;
+}
+
+.second_section_time {
+  border: 2px solid var(--ROSE-WHITE);
+  border-radius: 8px;
+}
+
+/* List Styles */
+ul {
+  list-style: disc;
+  padding-left: 2.8em;
+}
+
+.unordered_list_1 {
+  color: var(--DARK-RASPBERRY);
+  padding-bottom: 0.9em;
+}
+
+span {
+  color: var(--WENGE-BROWN);
+  font-weight: bold;
+}
+
+.next_1 {
+  color: var(--WENGE-BROWN);
+  font-weight: 500;
+}
+.next_ {
+  margin-left: 1.3em;
+}
+
+/* Third Section */
+.card_third_section {
+  border-bottom: 1px solid var(--LIGHT-GREY);
+  margin-top: 1.5em;
+}
+h2 {
+  font-family: "Young Serif", serif;
+  color: var(--NUTMEG);
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.ordered_list {
+  padding: 1em;
+  list-style-type: disc;
+}
+
+.ordered_list_1 {
+  color: var(--WENGE-BROWN);
+  padding-bottom: 0.7em;
+}
+.next_2 {
+  margin-left: 0.5em;
+  font-weight: 500;
+}
+
+/* Fourth Section */
+.card_fourth_section {
+  border-bottom: 1px solid var(--LIGHT-GREY);
+  margin-top: 1.5em;
+}
+.ordered_lists {
+  padding: 1em;
+  line-height: 1.5;
+  color: var(--NUTMEG);
+  font-weight: bold;
+}
+.ordered_list_2 {
+  padding-bottom: 0.7em;
+  font-size: 15px;
+  margin-left: 0.5em;
+}
+
+.next_3 {
+  margin-left: 0.5em;
+  font-weight: bold;
+}
+
+.next_4 {
+  font-weight: 500;
+  margin-left: 0.5em;
+}
+
+/* Footer */
+footer {
+  margin-top: 1.5em;
+}
+
+/* Table Styles */
+table {
+  margin-top: 1em;
+  width: 100%;
+  padding: 1.5em;
+}
+
+.table_content {
+  margin-bottom: 0.5em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+td {
+  padding: 1em 2em;
+  color: var(--WENGE-BROWN);
+}
+
+tbody td {
+  font-size: 16px;
+  border-bottom: 1px solid var(--LIGHT-GREY);
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+td:nth-child(2) {
+  font-weight: bold;
+  color: var(--NUTMEG);
+}
+
+@media (max-width: 375px) {
+  body {
+    padding: 1em;
+    background-color: var(--LIGHT-GREY);
+  }
+
+  .food_card {
+    margin-top: 2em;
+    max-width: 100%;
+    padding: 1.5em;
+    border-radius: 15px;
+  }
+
+  h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  .card_second_section {
+    height: auto;
+    padding: 1em;
+  }
+
+  ul {
+    padding-left: 2em;
+  }
+
+  .second_section_topic {
+    font-size: 16px;
+    padding-left: 1em;
+  }
+
+  .ordered_list {
+    padding: 0.5em;
+  }
+
+  .card_third_section,
+  .card_fourth_section {
+    margin-top: 1em;
+  }
+
+  table {
+    padding: 1em;
+    font-size: 14px;
+  }
+
+  td {
+    padding: 0.5em 1em;
+  }
+
+  footer {
+    margin-top: 1em;
+    text-align: center;
+  }
+}
